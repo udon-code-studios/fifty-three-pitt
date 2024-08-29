@@ -28,13 +28,14 @@ export default function NotFound() {
         <div className="max-w-4xl border-t border-gray-600" style={{ width: "calc(100% - 2rem)" }} />
 
         {/* content section 1 */}
-        <div className="p-10 w-full flex grow max-w-4xl items-center justify-between text-5xl">
-          404 ; Page not found
-        </div>
+        <div className="py-20 justify-center w-full max-w-4xl text-5xl text-center">404 ; Page not found</div>
       </div>
 
       {/* footer */}
-      <div className="p-10 w-full max-w-3xl items-center justify-between text-sm">
+      <div
+        className="p-10 w-full max-w-2xl items-center justify-between text-sm border-t border-gray-600"
+        style={{ width: "calc(100% - 8rem)" }}
+      >
         <p className="w-full text-center">copyright © 2024 ; all rights reserved ; fifty-three pitt</p>
       </div>
     </main>
