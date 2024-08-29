@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function NotFound() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       {/* header + contents */}
@@ -29,7 +28,9 @@ export default function Home() {
         <div className="max-w-4xl border-t border-gray-600" style={{ width: "calc(100% - 2rem)" }} />
 
         {/* content section 1 */}
-        <div className="p-10 w-full flex grow max-w-4xl items-center justify-between text-sm">hello world</div>
+        <div className="p-10 w-full flex grow max-w-4xl items-center justify-between text-5xl">
+          404 ; Page not found
+        </div>
       </div>
 
       {/* footer */}
