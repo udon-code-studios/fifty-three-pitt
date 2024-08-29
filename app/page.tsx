@@ -9,19 +9,19 @@ export default function Home() {
         {/* header */}
         <div className="p-10 w-full max-w-2xl flex items-center justify-between text-sm">
           <Link href="/research">
-            <p className="w-full text-center">Research</p>
+            <p>Research</p>
           </Link>
           <Link href="/education">
-            <p className="w-full text-center">Education</p>
+            <p>Education</p>
           </Link>
           <Link href="/">
             <h1 className="w-full text-2xl font-semibold">Fifty-Three Pitt</h1>
           </Link>
           <Link href="/funds">
-            <p className="w-full text-center">Funds</p>
+            <p>Portfolio</p>
           </Link>
           <Link href="/contact">
-            <p className="w-full text-center">Contact</p>
+            <p>Contact</p>
           </Link>
         </div>
 
