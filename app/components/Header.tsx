@@ -13,7 +13,7 @@ export default function Header() {
         className="pb-2 max-w-4xl flex flex-col items-center border-b border-gray-600"
         style={{ width: "calc(100% - 2rem)" }}
       >
-        {pathname === "/" || pathname === "/contact" ? <MainHeader /> : <SubpageHeader pathname={pathname} />}
+        {pathname === "/" ? <MainHeader /> : <SubpageHeader pathname={pathname} />}
       </div>
     </div>
   );
@@ -34,8 +34,8 @@ function MainHeader() {
       <Link href="/portfolio">
         <p>Portfolio</p>
       </Link>
-      <Link href="/contact">
-        <p>Contact</p>
+      <Link href="/clients">
+        <p>Clients</p>
       </Link>
     </div>
   );
