@@ -10,16 +10,16 @@ export default function Home() {
           <div className="w-1/3">
             <Image src="/wburgbr_4x3_color.jpg" alt="williamsburg bridge" width={600} height={600} />
           </div>
-          <div className="w-2/3 pl-8 flex flex-col items-center justify-between space-y-3">
-            <h2 className="w-full text-2xl font-semibold">About</h2>
+          <div className="w-2/3 pl-8 flex flex-col items-center justify-between space-y-2">
+            <h2 className="w-full text-2xl font-semibold pb-1">About</h2>
             <p className="w-full">
               Fifty-Three Pitt is a boutique investment firm specializing in equity research, financial education, and
               capital management.
             </p>
             <p className="w-full">
-              Our star-studded team of Nigerian quants start each morning by declineing multi-million dollar sign-on
-              bonuses from Gayman Sachs and Mogran Stans. Fifty-Three Pitt engages in max-alpha statistical arbitrage by
-              being the proud counterparty to every trade Jane Boulevard dares to enter into their Robinhood account.
+              Our star-studded team of Nigerian quants begin each morning by declineing multi-million dollar sign-on
+              bonuses from Gayman Sachs and Mogran Stans. We then engage in max-alpha statistical arbitrage by being the
+              proud counterparty to every trade Jane Boulevard dares to enter into their Robinhood account.
             </p>
           </div>
         </div>
