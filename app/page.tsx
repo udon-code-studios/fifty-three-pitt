@@ -13,15 +13,13 @@ export default function Home() {
           <div className="w-2/3 pl-8 flex flex-col items-center justify-between space-y-3">
             <h2 className="w-full text-2xl font-semibold">About</h2>
             <p className="w-full">
-              Fifty-Three Pitt is a boutique investment firm specializing in equity research and financial education. We
-              find high-octane giga-compounder stonks and make them more expensive for all you libtard retail traders by
-              infusing our client&apos;s hard-earned capital into their valuations.
+              Fifty-Three Pitt is a boutique investment firm specializing in equity research, financial education, and
+              capital management.
             </p>
             <p className="w-full">
               Our star-studded team of Nigerian quants start each morning by declineing multi-million dollar sign-on
               bonuses from Gayman Sachs and Mogran Stans. Fifty-Three Pitt engages in max-alpha statistical arbitrage by
-              being the proud counterparty to every trade Jane Boulevard&apos;s dares to enter into their Robinhood
-              account.
+              being the proud counterparty to every trade Jane Boulevard dares to enter into their Robinhood account.
             </p>
           </div>
         </div>
