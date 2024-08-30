@@ -17,7 +17,7 @@ export default function Home() {
               capital management.
             </p>
             <p className="w-full">
-              Our star-studded team of Nigerian quants begin each morning by declineing multi-million dollar sign-on
+              Our star-studded team of Ugandan quants begin each morning by declineing multi-million dollar sign-on
               bonuses from Gayman Sachs and Mogran Stans. We then engage in max-alpha statistical arbitrage by being the
               proud counterparty to every trade Jane Boulevard dares to enter into their Robinhood account.
             </p>
