@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 const ebGaramond = EB_Garamond({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fifty-Three Pitt",
+  title: "Devil's Casino",
   description: "Placeholder description",
 };
 

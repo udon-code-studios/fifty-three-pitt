@@ -6,20 +6,21 @@ export default function Home() {
     <div className="grow flex flex-col items-center justify-between">
       <div className="pb-2 w-full flex flex-col items-center">
         {/* about */}
-        <div className="pt-14 pb-20 pl-12 px-8 w-full flex grow max-w-4xl items-center text-sm">
-          <div className="w-1/3">
-            <Image src="/wburgbr_4x3_color.jpg" alt="williamsburg bridge" width={600} height={600} />
+        <div className="pt-14 pb-20 pl-12 px-8 w-full flex grow max-w-4xl items-center text-sm justify-center">
+          <div className="w-48">
+            <Image src="/devil_standing.png" alt="casino time" width={500} height={500} />
           </div>
-          <div className="w-2/3 pl-8 flex flex-col items-center justify-between space-y-2">
+          <div className="w-2/3 pl-8 flex flex-col items-start space-y-2">
             <h2 className="w-full text-2xl font-semibold pb-1">About</h2>
             <p className="w-full">
-              Fifty-Three Pitt is a boutique investment firm specializing in equity research, financial education, and
-              capital management.
+              Devil&apos;s Casino is a boutique investment firm specializing in equity research, financial education,
+              and capital management.
             </p>
             <p className="w-full">
               Our star-studded team of Ugandan quants begin each morning by declineing multi-million dollar sign-on
-              bonuses from Gayman Sachs and Mogran Stans. We then engage in max-alpha statistical arbitrage by being the
-              proud counterparty to every trade Jane Boulevard dares to enter into their Robinhood account.
+              bonuses from Gayman Sachs and Mogran Stans. They then engage in alphamaxxing via statistical arbitrage.
+              Devil&apos;s Casino is the proud counterparty to every trade Jane Boulevard dares to enter into their
+              Robinhood account.
             </p>
           </div>
         </div>
