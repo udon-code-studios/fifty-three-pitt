@@ -18,9 +18,9 @@ export default function Home() {
             </p>
             <p className="w-full">
               Our star-studded team of Ugandan quants begin each morning by declineing multi-million dollar sign-on
-              bonuses from Gayman Sachs and Mogran Stans. They then engage in alphamaxxing via statistical arbitrage.
-              Devil&apos;s Casino is the proud counterparty to every trade Jane Boulevard dares to enter into their
-              Robinhood account.
+              bonuses from Gayman Sachs and Mogran Stans. They then engage in relentless alphamaxxing via statistical
+              arbitrage. Devil&apos;s Casino is the proud counterparty to every trade Jane Boulevard dares to enter into
+              their Robinhood account.
             </p>
           </div>
         </div>
