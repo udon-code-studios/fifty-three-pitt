@@ -63,15 +63,17 @@ function MainHeader() {
 }
 
 function SubpageHeader(props: { pathname: string }) {
+  const screenSize = useTailwindScreenSize();
+
   return (
-    <div className="p-10 w-full max-w-3xl flex items-center">
+    <div className="py-8 sm:py-10 sm:px-10 w-full max-w-3xl flex flex-col sm:flex-row items-center gap-6">
       <Link href="/">
         <div className="w-full flex flex-col">
-          <h1 className="w-full text-3xl font-semibold">Devil&apos;s Casino</h1>
-          <h2 className="w-full text-xs font-mono text-center tracking-wider">CAPITAL MANAGEMENT LLC</h2>
+          <h1 className="w-full text-2xl sm:text-3xl font-semibold text-center">Devil&apos;s Casino</h1>
+          <h2 className="w-full text-2xs sm:text-xs font-mono text-center tracking-wider">CAPITAL MANAGEMENT LLC</h2>
         </div>
       </Link>
-      <h1 className="text-2xl px-6">|</h1>
+      {screenSize !== "xs" && <h1 className="text-2xl">|</h1>}
       <h1 className="text-3xl">{capitalizeFirstLetter(props.pathname.split("/")[1])}</h1>
     </div>
   );
