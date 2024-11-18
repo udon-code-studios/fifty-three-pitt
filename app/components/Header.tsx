@@ -23,6 +23,11 @@ export default function Header() {
 function MainHeader() {
   const screenSize = useTailwindScreenSize();
 
+  if (!screenSize) {
+    // Render a loading state while waiting for the screen size
+    return <p className="p-4">Loading...</p>;
+  }
+
   return (
     <div className="px-2 py-8 sm:py-10 w-full max-w-3xl flex flex-col sm:flex-row items-center justify-between gap-4">
       {/* site title for small screens */}
@@ -64,6 +69,11 @@ function MainHeader() {
 
 function SubpageHeader(props: { pathname: string }) {
   const screenSize = useTailwindScreenSize();
+
+  if (!screenSize) {
+    // Render a loading state while waiting for the screen size
+    return <p>Loading...</p>;
+  }
 
   return (
     <div className="py-8 sm:py-10 sm:px-10 w-full max-w-3xl flex flex-col sm:flex-row items-center gap-6">
