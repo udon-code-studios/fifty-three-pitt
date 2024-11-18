@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { capitalizeFirstLetter } from "../utils/string-utils";
+import useTailwindScreenSize from "../utils/useTailwindScreenSize";
 
 export default function Header() {
   const pathname = usePathname();
@@ -10,7 +11,7 @@ export default function Header() {
   return (
     <div className="w-full flex justify-center text-md">
       <div
-        className="pb-2 max-w-4xl flex flex-col items-center border-b border-gray-600"
+        className="sm:pb-2 max-w-4xl flex flex-col items-center border-b border-gray-600"
         style={{ width: "calc(100% - 2rem)" }}
       >
         {pathname === "/" ? <MainHeader /> : <SubpageHeader pathname={pathname} />}
@@ -20,25 +21,42 @@ export default function Header() {
 }
 
 function MainHeader() {
+  const screenSize = useTailwindScreenSize();
+
   return (
-    <div className="py-10 w-full max-w-3xl flex items-center justify-between">
+    <div className="px-2 py-8 sm:py-10 w-full max-w-3xl flex flex-col sm:flex-row items-center justify-between gap-4">
+      {/* site title for small screens */}
+      {screenSize === "xs" && (
+        <Link href="/">
+          <div className="flex flex-col w-full pb-2">
+            <h1 className="w-full text-3xl font-semibold text-center">Devil&apos;s Casino</h1>
+            <h2 className="w-full text-xs font-mono text-center tracking-wider">CAPITAL MANAGEMENT LLC</h2>
+          </div>
+        </Link>
+      )}
+
       <Link href="/research">
-        <p>Research</p>
+        <p className="text-center">Research</p>
       </Link>
       <Link href="/education">
-        <p>Education</p>
+        <p className="text-center">Education</p>
       </Link>
-      <Link href="/">
-        <div className="w-full flex flex-col">
-          <h1 className="w-full text-3xl font-semibold">Devil&apos;s Casino</h1>
-          <h2 className="w-full text-xs font-mono text-center tracking-wider">CAPITAL MANAGEMENT LLC</h2>
-        </div>
-      </Link>
+
+      {/* site title for larger screens */}
+      {screenSize !== "xs" && (
+        <Link href="/">
+          <div className="w-full flex flex-col">
+            <h1 className="w-full text-3xl font-semibold text-center">Devil&apos;s Casino</h1>
+            <h2 className="w-full text-xs font-mono text-center tracking-wider">CAPITAL MANAGEMENT LLC</h2>
+          </div>
+        </Link>
+      )}
+
       <Link href="/portfolio">
-        <p>Portfolio</p>
+        <p className="text-center">Portfolio</p>
       </Link>
       <Link href="/clients">
-        <p>Clients</p>
+        <p className="text-center">Clients</p>
       </Link>
     </div>
   );

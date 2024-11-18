@@ -6,11 +6,11 @@ export default function Home() {
     <div className="grow flex flex-col items-center justify-between">
       <div className="pb-2 w-full flex flex-col items-center">
         {/* about */}
-        <div className="pt-14 pb-20 pl-12 px-8 w-full flex grow max-w-4xl items-center text-sm justify-center">
-          <div className="w-48">
+        <div className="pt-14 pb-20 pl-12 px-8 w-full flex flex-col sm:flex-row grow max-w-4xl items-center text-sm justify-center">
+          <div className="w-32 sm:w-48 pb-8 sm:pb-0">
             <Image src="/devil_standing.png" alt="casino time" width={500} height={500} />
           </div>
-          <div className="w-2/3 pl-8 flex flex-col items-start space-y-2">
+          <div className="sm:w-2/3 sm:pl-8 flex flex-col items-start space-y-2">
             <h2 className="w-full text-2xl font-semibold pb-1">About</h2>
             <p className="w-full">
               Devil&apos;s Casino is a boutique investment firm specializing in equity research, financial education,
